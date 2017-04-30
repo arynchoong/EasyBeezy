@@ -7,12 +7,12 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_select_request_type">Select Request Type</string>
 
-    <string name="title_activity_select_request_option">SelectRequestOption</string>
+    <string name="title_activity_select_request_option">Select Request Option</string>
     <string name="cancel">Cancel</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="section_format">Select Request Type</string>
     <string name="select_request_type">Select Request Type</string>
     <string name="title_activity_add_request_details">Add Request Details</string>
     <string name="title_activity_request_type">Select Request Type</string>
-    <string name="title_activity_show_request_details">ShowRequestDetails</string>
+    <string name="title_activity_show_request_details">Request Details</string>
 </resources>

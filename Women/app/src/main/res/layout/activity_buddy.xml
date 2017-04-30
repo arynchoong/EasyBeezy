@@ -16,6 +16,30 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/trAddItem"
+            android:layout_margin="@dimen/design_navigation_separator_vertical_padding">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/abc_floating_window_z"
+                android:clickable="true"
+                android:onClick="showDetailAcitivty">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Seeking Buddies"
+                    android:textStyle="bold"
+                    android:id="@+id/tvRequestType"
+                    android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/trAddItem1"
             android:layout_margin="@dimen/design_navigation_separator_vertical_padding">
 
@@ -29,17 +53,20 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Seeking Running Buddy"
+                    android:text="Running Buddy"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@color/colorPrimary"
                     android:id="@+id/tvRequestType1"
                     android:layout_alignParentTop="true"/>
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_marginTop="6dp"
                     android:id="@+id/imageView1"
-                    android:src="@drawable/profilepic1"
+                    android:src="@drawable/profilepic4"
                     android:foregroundTintMode="src_over"
                     android:layout_below="@id/tvRequestType1"
                     android:scaleType="fitXY" />
@@ -95,9 +122,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Dog Walking Buddies"
+                    android:text="Dog Walking Buddy"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@color/colorPrimary"
                     android:id="@+id/tvRequestType2"
                     android:layout_alignParentTop="true"/>
@@ -105,8 +134,9 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_marginTop="6dp"
                     android:id="@+id/imageView2"
-                    android:src="@drawable/profilepic2"
+                    android:src="@drawable/profilepic3"
                     android:foregroundTintMode="src_over"
                     android:layout_below="@id/tvRequestType2"
                     android:scaleType="fitXY" />
@@ -164,9 +194,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Tennis Buddy"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@color/colorPrimary"
                     android:id="@+id/tvRequestType4"
                     android:layout_alignParentTop="true"/>
@@ -174,8 +206,9 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_marginTop="6dp"
                     android:id="@+id/imageView4"
-                    android:src="@drawable/profilepic4"
+                    android:src="@drawable/profilepic2"
                     android:foregroundTintMode="src_over"
                     android:layout_below="@id/tvRequestType4"
                     android:scaleType="fitXY" />
@@ -186,7 +219,7 @@
                     android:layout_below="@id/tvRequestType4"
                     android:layout_toRightOf="@id/imageView4"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Clrissa"
+                    android:text="Clarissa"
                     android:id="@+id/tvName4"
                     android:paddingLeft="6dp"
                     android:paddingStart="6dp" />
@@ -234,9 +267,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Yoga Buddy"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@color/colorPrimary"
                     android:id="@+id/tvRequestType3"
                     android:layout_alignParentTop="true"/>
@@ -244,8 +279,9 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_marginTop="6dp"
                     android:id="@+id/imageView3"
-                    android:src="@drawable/profilepic3"
+                    android:src="@drawable/profilepic1"
                     android:foregroundTintMode="src_over"
                     android:layout_below="@id/tvRequestType3"
                     android:scaleType="fitXY" />

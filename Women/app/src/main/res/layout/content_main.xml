@@ -11,13 +11,44 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.aryn.women.MainActivity"
     tools:showIn="@layout/app_bar_main">
-
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_column="0"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/layoutEditItems"
         android:dividerPadding="@dimen/design_navigation_separator_vertical_padding">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/trAddItem"
+            android:layout_margin="@dimen/design_navigation_separator_vertical_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/abc_floating_window_z"
+            android:clickable="true"
+            android:onClick="showDetailAcitivty">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Requests From Neighbours"
+            android:textStyle="bold"
+            android:id="@+id/tvRequestType"
+            android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+        </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,15 +65,18 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Receive Delivery"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@color/colorPrimary"
                     android:id="@+id/tvRequestType1"
                     android:layout_alignParentTop="true"/>
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_marginTop="6dp"
                     android:id="@+id/imageView1"
                     android:src="@drawable/profilepic1"
                     android:foregroundTintMode="src_over"
@@ -100,9 +134,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Collect Dry Cleaning"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@color/colorPrimary"
                     android:id="@+id/tvRequestType2"
                     android:layout_alignParentTop="true"/>
@@ -110,6 +146,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_marginTop="6dp"
                     android:id="@+id/imageView2"
                     android:src="@drawable/profilepic2"
                     android:foregroundTintMode="src_over"
@@ -169,9 +206,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Water plants"
+                    android:text="Water Plants"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@color/colorPrimary"
                     android:id="@+id/tvRequestType4"
                     android:layout_alignParentTop="true"/>
@@ -179,6 +218,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_marginTop="6dp"
                     android:id="@+id/imageView4"
                     android:src="@drawable/profilepic4"
                     android:foregroundTintMode="src_over"
@@ -239,9 +279,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Borrow Household Item"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:background="@color/colorPrimary"
                     android:id="@+id/tvRequestType3"
                     android:layout_alignParentTop="true"/>
@@ -249,6 +291,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:layout_marginTop="6dp"
                     android:id="@+id/imageView3"
                     android:src="@drawable/profilepic3"
                     android:foregroundTintMode="src_over"
@@ -293,5 +336,7 @@
             </RelativeLayout>
         </TableRow>
     </TableLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
