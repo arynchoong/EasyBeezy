@@ -88,7 +88,7 @@
                     android:layout_below="@id/tvRequestType1"
                     android:layout_toRightOf="@id/imageView1"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Aryn C."
+                    android:text="Claire P."
                     android:id="@+id/tvName1"
                     android:paddingLeft="6dp"
                     android:paddingStart="6dp" />
